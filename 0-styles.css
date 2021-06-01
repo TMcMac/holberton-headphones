@@ -17,6 +17,9 @@
    ============================= */
 
     :root {
+        /* Text colors*/
+        --colorWhite: #FFFFFF;
+
         /* Links hover/active*/
         --linkActive: #FF6565;
 
@@ -27,15 +30,106 @@
         --maxWidth: 1000px;
     }
 
+    body {
+        position: relative;
+        width: 1400px;
+        height: 3006px;
+        background: var(--colorWhite);
+        font-family: Source Sans Pro;
+    }
 /*** 2. Header ***/
     /* Top Level */
-
-    /* By Class */
-    .headerbackground {
-        background-image: url("./images/headphones_hero_1.jpg");
-        width: 100%;
+    header {
+        position: absolute;
+        width: 1000.39px;
+        height: 32px;
+        left: 200.61px;
+        top: 27.76px;
     }
 
-    .navelement {
+    /* By Class */
+    .topbar {
+        display: flex;
+    }
 
+    .logo {
+        width: 161px;
+        height: 32px;
+        left: 200.61px;
+        top: 27.76px;
+    }
+
+    .menu {
+        width: 255px;
+        height: 15px;
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .menu ul li a {
+        text-decoration: none;
+        color: var(--colorWhite);
+    }
+
+    .mainpart {
+        position: absolute;
+        width: 1400px;
+        height: 800px;
+        left: 0px;
+        top: 0px;
+        color: var(--colorWhite);
+        background-image: url("./images/headphones_hero_1.jpg");
+    }
+
+    .mainpart .text {
+        position: absolute;
+        width: 637px;
+        height: 313px;
+        left: 382px;
+        top: 372px;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .text h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .CTA {
+        background-color: var(--linkActive);
+        border-radius: 22px;
+    }
+
+    .CTA a {
+        text-decoration: none;
+        color: var(--colorWhite);
+        height: 18px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .text p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
     }
