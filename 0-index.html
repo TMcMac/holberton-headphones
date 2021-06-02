@@ -6,28 +6,47 @@
         <title>Holberton - Headphones</title>
         <meta name="description" content="A project to work on implementing a design">
         <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="0-styles.css">
     </head>
     <body>
-        <div class="mainpart">
-            <header class="topbar">
-                <a href="#"><img src="./images/logo_headphones.png" class="logo"></a>
-                <nav class="menu">
-                     <ul>
-                        <li class="WWD"><a href="#">what we do</a></li>
-                        <li class="OR"><a href="#">our results</a></li>
-                        <li class="CU"><a href="#">contact us</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="text">
-                <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-                <h4>Lorem ipsum dolor set amet lorem ipsum dolor set</h4>
-                <button class="CTA"><a href="#">CALL TO ACTION</a></button>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <div class="topbar-container">
+                    <input class="menu-btn" type="checkbox" id="menu-btn">
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <div class="headerlogo">
+                        <a href="#">
+                            <img src="./images/logo_headphones.png" class="logo" alt="The Headphones logo" width="161" height="32">
+                        </a>
+                    </div>
+                    <nav class="navbar-menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#">what we do</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">our results</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-text">
+                    <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+                    <p class="subtext">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+                    <button class="CTA">
+                        <a href="#">CALL TO ACTION</a>
+                    </button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
             </div>
-        </div>
+        </header>
     </body>
 </html>
