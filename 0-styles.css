@@ -48,7 +48,9 @@
 /* Top level selectors
     ============================ */
     body {
-        width: 100%;
+        width: var(--maxWidth);
+        position: relative;
+        margin: 0 auto;
         scroll-behavior: smooth;
         background: var(--colorWhite);
         font-family: var(--main-font);
@@ -82,7 +84,6 @@
 /* By Class 
     ========================= */
     .container {
-        max-width: var(--maxWidth);
         margin: 0 auto;
         padding: 0 1rem;
     }
@@ -102,6 +103,7 @@
         width: var(--maxWidth);
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .topbar-container {
@@ -120,7 +122,7 @@
     .menu-btn {
         display: none;
     }
-    
+
     .navbar-menu {
         justify-content: flex-end;
         margin-left: 20rem;
