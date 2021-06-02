@@ -145,6 +145,17 @@
     /* Header text section */
 
     .header-text {
-        margin-top: 10rem;
+        max-width: 637px;
+        margin: 10rem auto auto auto;
         text-align: center;
     }
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    .nav {
+		display: none;
+		flex-basis: 100%;
+		justify-content: center;
+	}
+}
