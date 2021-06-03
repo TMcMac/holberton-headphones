@@ -26,6 +26,7 @@
         --font-weight: 400;
         --font-style: normal;
         --font-size: 16px;
+        --header-font-size: 32px;
         --line-height: 26px;
         --text-align: center;
         --main-font: 'Source Sans Pro', sans-serif;
@@ -81,6 +82,10 @@
         color: var(--colorWhite);
     }
 
+    button:hover {
+        opacity: 0.9;
+    }
+
 /* By Class 
     ========================= */
     .container {
@@ -90,20 +95,16 @@
 
 /*** 2. Header ***/
 
-    .header {
+    .header-container {
         background-image: url(./images/headphones_hero_1.jpg);
-        height: 800px;
+        width: var(--maxWidth);
+        min-height: 800px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        margin-top: 0;
-    }
-
-    .header-container {
-        width: var(--maxWidth);
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .topbar-container {
@@ -150,6 +151,10 @@
         text-align: center;
     }
 
+    .header-text h1 {
+        font-size: var(--header-font-size);
+    }
+
 /* Media Queries */
 
 @media screen and (max-width: 480px) {
@@ -157,5 +162,10 @@
 		display: none;
 		flex-basis: 100%;
 		justify-content: center;
-	}
+    }
+    
+    .headerlogo {
+        align-self: center;
+        margin: 0 auto;
+    }
 }
